@@ -28,6 +28,11 @@ Co = ctrb(sys);
 disp(Co);
 disp(rank(Co));
 
+%% Observable
+Ob = obsv(sys);
+disp(Ob);
+disp(rank(Ob));
+
 %% Set Up Simulation
 TSim = 10;               
 if simOption.noise == 'on'
