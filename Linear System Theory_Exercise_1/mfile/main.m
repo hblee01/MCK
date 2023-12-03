@@ -23,6 +23,11 @@ sys = ss(A,B,C,D);
 simOption.noise = 'on';                 % on or off
 simOption.disturbance = 'on';       % on or off
 
+%% Controllable
+Co = ctrb(sys);
+disp(Co);
+disp(rank(Co));
+
 %% Set Up Simulation
 TSim = 10;               
 if simOption.noise == 'on'
