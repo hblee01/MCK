@@ -1,7 +1,7 @@
 %% Initialize
-clc;
-%close all;
-clear all;
+clear all
+clc
+close all
 
 %% Set Up Parameters
 mass = 5;
@@ -67,12 +67,13 @@ else
     freqDist = 1;
 end
 
-%% Open Simulink File
-cd '../sim';
-open('sim_statefeedback.slx');
+%% Run Simulink File
+sim('sim_statefeedback.slx');
 %% Simulation Result
-%out = ans;
+out = ans;
 
-%figure;
-%plot(out.time,out.config);
-%grid on;
+figure;
+plot(out.time,out.config);
+title('output'); xlabel('[sec]'); ylabel('[]');
+legend('pos','vel');
+grid on;
