@@ -1,6 +1,6 @@
 # MCK
 (”Kuo의 자동제어 (10판)”, 205 페이지 참고)
-
+![Untitled](picture/pic1.png)
 - $M>0$ :  질량
 - $B \geq 0$ : 댐핑 계수
 - $K \geq 0$ : 스프링 계수
