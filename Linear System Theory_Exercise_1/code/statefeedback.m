@@ -68,6 +68,7 @@ else
 end
 
 %% Run Simulink File
+cd ..\sim\;
 sim('sim_statefeedback.slx');
 %% Simulation Result
 out = ans;
