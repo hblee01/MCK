@@ -12,8 +12,8 @@ initPos = 3;
 initVel = 1;
 
 %% Select Simulation Mode
-simOption.noise = "off";                 % on or off
-simOption.disturbance = "off";       % on or off
+simOption.noise = "on";                 % on or off
+simOption.disturbance = "on";       % on or off
 
 %% State space
 A = [0 1;-(springCoeff/mass) -(dampingCoeff/mass)];
@@ -24,7 +24,7 @@ D = 0;
 sys = ss(A,B,C,D);
 disp(sprintf('Eigen values of A: %f\n',eig(sys.A)));
 
-desiredEig = [-2.0+0.0000i -5+0.0000i];
+desiredEig = 3*[-2.0+0.0000i -5+0.0000i];
 
 K=desiredEig2K(sys,desiredEig);
 
